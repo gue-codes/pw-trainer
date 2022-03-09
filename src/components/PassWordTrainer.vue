@@ -23,12 +23,12 @@
     </button>
     <div
       v-if="editing === false"
-      class="flex flex-row space-x-2 justify-center items-center justify-center"
+      class="flex flex-row space-x-2 justify-center items-center"
     >
       <div
         v-for="(char, index) in pwSpread"
         :key="`char-${index}`"
-        class="bg-gray-200 text-gray-900 font-bold w-12 h-12 rounded flex content-center items-center justify-center text-white mt-8"
+        class="bg-gray-200 text-white font-bold w-12 h-12 rounded flex content-center items-center justify-center mt-8"
         :class="addCheckClass(index)"
       >
         {{ glimpse === true ? char : "•" }}
